@@ -136,7 +136,7 @@ if __name__ == "__main__":
                 sv=True
                 break
     for _ in range(int(z)):
-        random_number = random.randrange(2**204,2**256-25)
+        random_number = random.randrange(2**204,115792089237316195423570985008687907853269984665640564039457584007913129639935)
         address_legacy = secret_to_address(random_number,s,True)
         address = secret_to_address(random_number,s)
         wif = secret_to_wif(random_number,s)
